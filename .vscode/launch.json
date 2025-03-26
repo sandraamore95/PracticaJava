@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "GestionProductos",
+            "request": "launch",
+            "mainClass": "GestionProductos",
+            "projectName": "PracticaJava_374a3405"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
