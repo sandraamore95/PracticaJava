@@ -14,7 +14,6 @@
     *      Mostrar menú.
     *      Leer votos.
     *      Validar voto.
-    *      Calcular porcentaje.
     *      Determinar el ganador.
     * Controlar errores de entrada (votos fuera del rango).
     */

@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Practicando",
+            "request": "launch",
+            "mainClass": "Practicando",
+            "projectName": "PracticaJava_374a3405"
+        },
+        {
+            "type": "java",
+            "name": "ENTREGABLE_Blackjack",
+            "request": "launch",
+            "mainClass": "ENTREGABLE_Blackjack",
+            "projectName": "PracticaJava_374a3405"
+        },
+        {
+            "type": "java",
             "name": "GestionProductos",
             "request": "launch",
             "mainClass": "GestionProductos",
