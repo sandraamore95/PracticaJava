@@ -4,7 +4,6 @@ public class Practicando {
 
     public static void main(String[] args) {
 
-  
         if (isCapicua("hola")) {
             System.out.println("es capicua");
         } else {
@@ -144,9 +143,9 @@ public class Practicando {
     }
 
     public static boolean isCapicua(String palabra) {
-     
+
         String palabraReverse = "";
-        for (int i = palabra.length()-1 ; i >= 0; i--) {
+        for (int i = palabra.length() - 1; i >= 0; i--) {
             char letra = palabra.charAt(i);
             palabraReverse = palabraReverse + letra;
 
