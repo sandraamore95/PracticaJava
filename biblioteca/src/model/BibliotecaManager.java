@@ -1,12 +1,11 @@
 package model;
 
 import enums.EstadoRecurso;
-import exceptions.UserYaPrestado;
 import exceptions.ResourceNoDisponible;
 import exceptions.ResourceNoExiste;
 import exceptions.UserNoExiste;
+import exceptions.UserYaPrestado;
 import interfaces.Prestamista;
-
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -120,6 +119,9 @@ public class BibliotecaManager implements Prestamista {
      * @return true si la devolución se registró, false si no se encontró préstamo activo.
      */
     public boolean devolver(RecursoBiblioteca recurso) {
+        if (recurso == null) {
+        throw new IllegalArgumentException("El recurso no puede ser null");
+    }
         recurso.setEstado(EstadoRecurso.DISPONIBLE);
 
         // Buscar el registro activo del recurso
