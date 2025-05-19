@@ -1,16 +1,16 @@
 package app;
 
 import enums.EstadoRecurso;
-import exceptions.UserYaPrestado;
 import exceptions.ResourceNoDisponible;
 import exceptions.ResourceNoExiste;
 import exceptions.UserNoExiste;
-import model.*;
-
+import exceptions.UserYaPrestado;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
+import model.*;
 
 /**
  * Clase principal de la aplicación que proporciona un menú interactivo para que el usuario pueda realizar diferentes acciones sobre los prestamos y devoluciones de recursos.
@@ -81,7 +81,7 @@ public class Main {
                     default:
                         System.out.println("Opción no válida. Por favor, selecciona una opción entre 1 y 6.");
                 }
-            } catch (NumberFormatException e) {
+            } catch (InputMismatchException  e) {
                 System.out.println("Error: Entrada inválida. Por favor, ingresa un número.");
                 scanner.nextLine();
             } catch (Exception e) {
