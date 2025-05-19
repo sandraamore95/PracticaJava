@@ -152,7 +152,7 @@ public class Main {
             System.err.println(e.getMessage());
         } catch (UserYaPrestado | UserNoExiste e) {
             System.err.println(e.getMessage());
-        } catch (Exception e) { // Otros errores
+        } catch (RuntimeException e) { // Otros errores
             System.err.println("Error inesperado: " + e.getMessage());
         }
     }
@@ -185,7 +185,7 @@ public class Main {
 
         } catch (ResourceNoExiste e) {
             System.err.println(e.getMessage());
-        } catch (Exception e) { // Otros errores
+        } catch (RuntimeException e) { // Otros errores
             System.err.println("Error inesperado: " + e.getMessage());
         }
     }
